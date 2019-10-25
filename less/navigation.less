@@ -7,14 +7,19 @@ header{
         .flexBox(flex-start, center);
         max-width: 800px;
         margin: 0px auto;
+
+        @media @tablet{
+            padding: 0% 6%;
         
-        @media @moble{
+        }
+        
+        @media @mobile{
             flex-direction: column;
             
         }
 
         h1{
-            @media @moble{
+            @media @mobile{
                 text-align: center;
             }
         }
@@ -33,7 +38,7 @@ header{
 
         .links{
             .flexBox(space-between, center);
-            @media @moble{
+            @media @mobile{
                 width: 100%;
                 justify-content: space-evenly;
             }
