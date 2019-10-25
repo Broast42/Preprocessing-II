@@ -178,6 +178,14 @@ img {
     max-width: 460px;
   }
 }
+@keyframes textGrow {
+  from {
+    font-size: 1.6rem;
+  }
+  to {
+    font-size: 2.5rem;
+  }
+}
 header {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
@@ -212,6 +220,11 @@ header nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #212529;
+}
+header nav a:hover {
+  animation-name: textGrow;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 header nav .links {
   display: flex;
