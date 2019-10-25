@@ -6,7 +6,18 @@ header{
     nav{
         .flexBox(flex-start, center);
         max-width: 800px;
-        margin: 0px auto; 
+        margin: 0px auto;
+        
+        @media @moble{
+            flex-direction: column;
+            
+        }
+
+        h1{
+            @media @moble{
+                text-align: center;
+            }
+        }
         
         div{
             width: 50%;
@@ -22,6 +33,10 @@ header{
 
         .links{
             .flexBox(space-between, center);
+            @media @moble{
+                width: 100%;
+                justify-content: space-evenly;
+            }
         }
         
 
