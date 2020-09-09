@@ -1,1 +1,29 @@
 // Mixins in here
+
+.flexBox(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@bgcolor, @color){
+    width: 85%;
+    background: @bgcolor;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: @color;
+    padding: 6% 0%;
+
+    @media @mobile{
+        width: 100%;
+        padding: 4% 0%;
+    }
+
+}
+
+.linkAnimation(@name, @duration){
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-fill-mode: forwards;
+}
